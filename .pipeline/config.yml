@@ -1,4 +1,19 @@
+---
+general:
+  cpiApiServiceKeyCredentialsId: "api"
+  integrationFlowId: "TestIflow"
+stages:
+  uploadStage:
+    enabled: false
+  deployStage:
+    enabled: true
+  integrationTestStage:
+    enabled: false
 steps:
-  integrationArtifactDeploy:
-    cpiApiServiceKeyCredentialsId: roverpocServiceKeyCred
-    integrationFlowId: TestIflow
+  integrationArtifactUpload:
+    packageId: ""
+    integrationFlowName: ""
+  integrationArtifactTriggerIntegrationTest:
+    contentType: ""
+    messageBodyPath: ""
+    integrationFlowServiceKeyCredentialsId: ""
